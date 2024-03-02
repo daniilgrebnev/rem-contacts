@@ -1,27 +1,27 @@
 import { IData } from '@/components/data'
-import Image from 'next/image'
 import Link from 'next/link'
+import ItemContent from './ItemContent'
 
-const Item = ({ name, text, icon, link, isDisabled }: IData) => {
+const Item: any = ({ name, text, icon, link, isDisabled }: IData) => {
 	return (
 		<div className=''>
 			{isDisabled ? (
-				<div className='item disabled'>
-					<div className='item-content'>
-						<Image src={icon} alt='Phone' width={30} />
-						<p>{name}</p>
-					</div>
-					{text.length > 0 && <p className='plain-text'>{text}</p>}
-				</div>
+				<ItemContent
+					name={name}
+					isDisabled={isDisabled}
+					text={text}
+					link={link}
+					icon={icon}
+				/>
 			) : (
 				<Link href={link}>
-					<div className='item'>
-						<div className='item-content'>
-							<Image src={icon} alt='Phone' width={30} />
-							<p>{name}</p>
-						</div>
-						{text.length > 0 && <p className='plain-text'>{text}</p>}
-					</div>
+					<ItemContent
+						name={name}
+						isDisabled={isDisabled}
+						text={text}
+						link={link}
+						icon={icon}
+					/>
 				</Link>
 			)}
 		</div>
