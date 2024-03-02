@@ -6,7 +6,7 @@ const ItemContainer = () => {
 	return (
 		<div className='item-container'>
 			{data.map((item, index) => (
-				<div key={index} className=''>
+				<div key={index} className='child'>
 					<Item
 						name={item.name}
 						isDisabled={item.isDisabled}

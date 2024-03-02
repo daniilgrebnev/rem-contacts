@@ -5,9 +5,9 @@ header {
 	justify-content: center;
 }
 img {
-	width: 145px;
-	height: 145px;
+	width: 105px;
+	height: 105px;
 	background: #254534;
-	padding: 6px;
 	border-radius: 6px;
+	padding: 7px 2px;
 }
