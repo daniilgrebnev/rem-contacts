@@ -1,0 +1,13 @@
+header {
+	height: 7vh;
+	background: #254534;
+	display: flex;
+	justify-content: center;
+}
+img {
+	width: 145px;
+	height: 145px;
+	background: #254534;
+	padding: 6px;
+	border-radius: 6px;
+}
