@@ -7,7 +7,9 @@ import Logo from '../../icons/logo.svg'
 const Header = () => {
 	return (
 		<header>
-			<Image src={Logo} alt='' width={0} height={0} />
+			<div className='img'>
+				<Image src={Logo} alt='' width={0} height={0} />
+			</div>
 		</header>
 	)
 }
