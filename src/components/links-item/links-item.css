@@ -14,7 +14,7 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background: #254534;
+	background: #2545347c;
 	padding: 2px 0px;
 	width: 80%;
 	height: 80%;
@@ -24,8 +24,8 @@
 
 .item img {
 	display: flex;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	aspect-ratio: 1;
 	fill: white;
 	stroke: white;
 	margin: 0 auto;
@@ -41,7 +41,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 2px;
+	gap: 7px;
 }
 
 .plain-text {
@@ -50,5 +50,5 @@
 	padding: 16px;
 }
 .disabled {
-	opacity: 40%;
+	opacity: 20%;
 }

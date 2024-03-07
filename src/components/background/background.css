@@ -1,0 +1,67 @@
+.background-container {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: #041104;
+	top: 0;
+	z-index: 10;
+	overflow: hidden;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+
+.background-glass {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: #000;
+	z-index: 15;
+	opacity: 30%;
+}
+.background-circle-container {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+}
+.background-circle {
+	position: absolute;
+	right: 100%;
+	aspect-ratio: 1;
+	filter: blur(25px);
+	border-radius: 50%;
+}
+
+.background-circle.blue {
+	background: #0083fb;
+	left: 0;
+	width: 40px;
+	top: 50%;
+	&.right {
+		left: 85%;
+		top: 40%;
+	}
+}
+.background-circle.azure {
+	background: #0cba86;
+	left: 5%;
+	top: 50%;
+	width: 50px;
+	&.right {
+		left: 75%;
+		top: 30%;
+	}
+}
+.background-circle.green {
+	background: #229226;
+	left: 0;
+	top: 55%;
+	width: 100px;
+	&.right {
+		left: 80%;
+		top: 40%;
+	}
+}
+.background-circle-container.right.background-circle {
+	right: 0;
+}
